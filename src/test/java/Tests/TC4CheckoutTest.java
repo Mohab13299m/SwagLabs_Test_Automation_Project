@@ -3,22 +3,24 @@ package Tests;
 import Listeners.InvokedMethod;
 import Listeners.Itest;
 import Pages.P01_LoginPage;
+import Pages.P02_HomePage;
 import Utilities.DataUtil;
 import Utilities.LogsUtil;
 import Utilities.Utility;
 import com.github.javafaker.Faker;
+import org.openqa.selenium.Cookie;
 import org.testng.Assert;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Listeners;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.time.Duration;
+import java.util.Set;
 
 import static DriverFactory.driverFactory.*;
 import static Utilities.DataUtil.getPropertiesData;
+import static Utilities.Utility.getAllCookies;
+import static Utilities.Utility.restoreSession;
 
 
 @Listeners({InvokedMethod.class, Itest.class})
@@ -30,9 +32,25 @@ public class TC4CheckoutTest {
     String username = new Faker().name().username();
     String ZipCode = new Faker().number().digits(5);
 
+    private Set<Cookie> cookies;
+
     public TC4CheckoutTest() throws FileNotFoundException {
     }
 
+    @BeforeClass
+    public void login() throws IOException {
+        LogsUtil.info("Edge Driver is opened");
+        setupDriver(getPropertiesData("enviroments", "Browser"));
+        getDriver().get(getPropertiesData("enviroments", "BaseUrl"));
+        LogsUtil.info("Page is redirected to url");
+        getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+        new P01_LoginPage(getDriver())
+                .enterusername(ValidUsername)
+                .enterpassword(ValidPassword)
+                .clickbutton();
+        cookies = getAllCookies(getDriver());
+        quitdriver();
+    }
 
     @BeforeMethod
     public void setup() throws IOException {
@@ -40,15 +58,14 @@ public class TC4CheckoutTest {
         setupDriver(getPropertiesData("enviroments", "Browser"));
         getDriver().get(getPropertiesData("enviroments", "BaseUrl"));
         LogsUtil.info("Page is redirected to url");
-        getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+        restoreSession(getDriver(), cookies);
+        getDriver().get(getPropertiesData("enviroments", "HomeUrl"));
+        getDriver().navigate().refresh();
     }
 
     @Test
     public void CheckoutSteponeTestCase() throws IOException {
-        new P01_LoginPage(getDriver())
-                .enterusername(ValidUsername)
-                .enterpassword(ValidPassword)
-                .clickbutton()
+        new P02_HomePage(getDriver())
                 .addRandomProducts(2, 6)
                 .ClickOnCartIcon()
                 .ClickOnCheckout()
@@ -60,6 +77,11 @@ public class TC4CheckoutTest {
     @AfterMethod
     public void quit() {
         quitdriver();
+    }
+
+    @AfterClass
+    public void deleteSession() {
+        cookies.clear();
     }
 
 }

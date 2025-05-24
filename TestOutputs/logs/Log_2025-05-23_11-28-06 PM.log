@@ -1,4 +1,0 @@
-[INFO] 23-05-2025 23:28:06 [main] [Tests.TC2HomeTest.setup(TC2HomeTest.java:36)] - Edge Driver is opened
-[INFO] 23-05-2025 23:28:11 [main] [Tests.TC2HomeTest.setup(TC2HomeTest.java:39)] - Page is redirected to url
-[INFO] 23-05-2025 23:28:11 [main] [Listeners.Itest.onTestStart(Itest.java:10)] - Test Case clickonCartIconTestCase started
-[INFO] 23-05-2025 23:28:23 [main] [Listeners.InvokedMethod.afterInvocation(InvokedMethod.java:19)] - Test Case clickonCartIconTestCase failed
