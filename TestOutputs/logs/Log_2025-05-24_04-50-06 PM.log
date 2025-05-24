@@ -1,0 +1,22 @@
+[INFO] 24-05-2025 16:50:06 [main] [Tests.TC2HomeTest.login(TC2HomeTest.java:38)] - Edge Driver is opened
+[INFO] 24-05-2025 16:50:12 [main] [Tests.TC2HomeTest.login(TC2HomeTest.java:41)] - Page is redirected to url
+[INFO] 24-05-2025 16:50:15 [main] [Tests.TC2HomeTest.setup(TC2HomeTest.java:53)] - Edge Driver is opened
+[INFO] 24-05-2025 16:50:20 [main] [Tests.TC2HomeTest.setup(TC2HomeTest.java:56)] - Page is redirected to url
+[INFO] 24-05-2025 16:50:21 [main] [Listeners.Itest.onTestStart(Itest.java:10)] - Test Case AddingRandomProductsTestCase started
+[INFO] 24-05-2025 16:50:21 [main] [Pages.P02_HomePage.addRandomProducts(P02_HomePage.java:73)] - random product number :2
+[INFO] 24-05-2025 16:50:22 [main] [Pages.P02_HomePage.addRandomProducts(P02_HomePage.java:73)] - random product number :4
+[INFO] 24-05-2025 16:50:22 [main] [Pages.P02_HomePage.addRandomProducts(P02_HomePage.java:73)] - random product number :5
+[INFO] 24-05-2025 16:50:22 [main] [Pages.P02_HomePage.getNumberofProductsonCart(P02_HomePage.java:50)] - Number of products on cart:3
+[INFO] 24-05-2025 16:50:22 [main] [Pages.P02_HomePage.NumberofSelectedProducts(P02_HomePage.java:62)] - Number of selected products on cart:3
+[INFO] 24-05-2025 16:50:22 [main] [Listeners.Itest.onTestSuccess(Itest.java:15)] - Test Case AddingRandomProductsTestCase passed
+[INFO] 24-05-2025 16:50:24 [main] [Tests.TC2HomeTest.setup(TC2HomeTest.java:53)] - Edge Driver is opened
+[INFO] 24-05-2025 16:50:29 [main] [Tests.TC2HomeTest.setup(TC2HomeTest.java:56)] - Page is redirected to url
+[INFO] 24-05-2025 16:50:31 [main] [Listeners.Itest.onTestStart(Itest.java:10)] - Test Case CheckingNumberofSelectedproductsTestCase started
+[INFO] 24-05-2025 16:50:31 [main] [Pages.P02_HomePage.AddallProducts(P02_HomePage.java:40)] - Number of all products6
+[INFO] 24-05-2025 16:50:32 [main] [Pages.P02_HomePage.getNumberofProductsonCart(P02_HomePage.java:50)] - Number of products on cart:6
+[INFO] 24-05-2025 16:50:32 [main] [Pages.P02_HomePage.NumberofSelectedProducts(P02_HomePage.java:62)] - Number of selected products on cart:6
+[INFO] 24-05-2025 16:50:32 [main] [Listeners.Itest.onTestSuccess(Itest.java:15)] - Test Case CheckingNumberofSelectedproductsTestCase passed
+[INFO] 24-05-2025 16:50:34 [main] [Tests.TC2HomeTest.setup(TC2HomeTest.java:53)] - Edge Driver is opened
+[INFO] 24-05-2025 16:50:41 [main] [Tests.TC2HomeTest.setup(TC2HomeTest.java:56)] - Page is redirected to url
+[INFO] 24-05-2025 16:50:45 [main] [Listeners.Itest.onTestStart(Itest.java:10)] - Test Case clickonCartIconTestCase started
+[INFO] 24-05-2025 16:50:46 [main] [Listeners.Itest.onTestSuccess(Itest.java:15)] - Test Case clickonCartIconTestCase passed

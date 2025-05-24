@@ -1,0 +1,4 @@
+[INFO] 23-05-2025 23:21:31 [main] [Tests.TC1LoginTest.setup(TC1LoginTest.java:34)] - Edge Driver is opened
+[INFO] 23-05-2025 23:21:35 [main] [Tests.TC1LoginTest.setup(TC1LoginTest.java:37)] - Page is redirected to url
+[INFO] 23-05-2025 23:21:36 [main] [Listeners.Itest.onTestStart(Itest.java:10)] - Test Case ValidLoginTc1 started
+[INFO] 23-05-2025 23:21:37 [main] [Listeners.Itest.onTestSuccess(Itest.java:15)] - Test Case ValidLoginTc1 passed
