@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-05-27T17:05:38 EEST" name="Login Suite" finished-at="2025-05-27T17:06:07 EEST" duration-ms="28773">
+    <groups>
+    </groups>
+    <test started-at="2025-05-27T17:05:38 EEST" name="Login Test" finished-at="2025-05-27T17:06:07 EEST" duration-ms="28773">
+      <class name="Tests.TC1LoginTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:Tests.TC1LoginTest@279126f5]" started-at="2025-05-27T17:05:38 EEST" name="setup" finished-at="2025-05-27T17:05:51 EEST" duration-ms="12530" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="LogoutTc1()[pri:0, instance:Tests.TC1LoginTest@279126f5]" started-at="2025-05-27T17:05:51 EEST" name="LogoutTc1" finished-at="2025-05-27T17:05:54 EEST" duration-ms="3030" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LogoutTc1 -->
+        <test-method is-config="true" signature="quit()[pri:0, instance:Tests.TC1LoginTest@279126f5]" started-at="2025-05-27T17:05:54 EEST" name="quit" finished-at="2025-05-27T17:05:57 EEST" duration-ms="3114" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:Tests.TC1LoginTest@279126f5]" started-at="2025-05-27T17:05:57 EEST" name="setup" finished-at="2025-05-27T17:06:04 EEST" duration-ms="6716" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="ValidLoginTc1()[pri:0, instance:Tests.TC1LoginTest@279126f5]" started-at="2025-05-27T17:06:04 EEST" name="ValidLoginTc1" finished-at="2025-05-27T17:06:05 EEST" duration-ms="1002" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidLoginTc1 -->
+        <test-method is-config="true" signature="quit()[pri:0, instance:Tests.TC1LoginTest@279126f5]" started-at="2025-05-27T17:06:05 EEST" name="quit" finished-at="2025-05-27T17:06:07 EEST" duration-ms="1732" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- Tests.TC1LoginTest -->
+    </test> <!-- Login Test -->
+  </suite> <!-- Login Suite -->
+</testng-results>

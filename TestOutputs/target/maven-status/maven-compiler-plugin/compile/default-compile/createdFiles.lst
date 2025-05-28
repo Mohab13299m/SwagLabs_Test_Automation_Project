@@ -1,0 +1,10 @@
+Pages\P04_CheckoutPage.class
+Utilities\DataUtil.class
+Pages\P01_LoginPage.class
+Utilities\Utility.class
+Pages\P03_CartPage.class
+DriverFactory\driverFactory.class
+Pages\P02_HomePage.class
+Pages\P05_OverViewPage.class
+Pages\P06_FinishOrder.class
+Utilities\LogsUtil.class

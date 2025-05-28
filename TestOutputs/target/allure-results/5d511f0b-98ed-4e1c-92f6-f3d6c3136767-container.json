@@ -1,0 +1,1 @@
+{"uuid":"5d511f0b-98ed-4e1c-92f6-f3d6c3136767","name":"Tests.TC2HomeTest.setup","children":["cfd7b8b4-1dca-44b9-8b67-f8e09d24b05c"],"description":"","befores":[{"name":"setup","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1748386856754,"stop":1748386875900}],"afters":[],"start":1748386856754,"stop":1748386875900}

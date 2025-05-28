@@ -1,0 +1,1 @@
+{"uuid":"e969ed8e-f941-4245-adda-065410bd57ac","name":"Tests.TC6FinishingMessageTest","children":["e3a7ccf5-abac-4ec6-8f50-21d9aa1d1d55"],"befores":[{"name":"login","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1748386979228,"stop":1748386987878}],"afters":[],"start":1748386818945,"stop":1748387000072}
